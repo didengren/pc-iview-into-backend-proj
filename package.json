@@ -5,7 +5,7 @@
   "scripts": {
     "serve": "vue-cli-service serve --mode native",
     "dev-build": "vue-cli-service build --mode development",
-    "test-build": "vue-cli-service build --mode testing",
+    "debug-build": "vue-cli-service build --mode debug",
     "prod-build": "vue-cli-service build --mode production",
     "lint": "eslint \"./src/**\" --fix --ext .js,.vue"
   },
