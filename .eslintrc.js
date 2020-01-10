@@ -19,8 +19,11 @@ module.exports = {
   },
   plugins: ["prettier"],
   rules: {
-    'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    "no-eval": 0,
+    "no-console": process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    "no-debugger": process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    "no-void": 0,
+    "no-bitwise": 0,
     "no-new": 0,
     "no-shadow": 0,
     "camelcase": [0, {
@@ -55,6 +58,7 @@ module.exports = {
     // }],
     "prefer-destructuring": 0,
     "import/no-extraneous-dependencies": 0,
+    "import/prefer-default-export": 0,
     "vue/no-v-html": 0,
     "vue/attributes-order": 0,
     "vue/require-v-for-key": 0,
